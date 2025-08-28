@@ -1,7 +1,9 @@
-import { Links, Meta, Outlet, Scripts } from "@remix-run/react";
 import { Theme } from "@radix-ui/themes";
+import { Links, Meta, Outlet, Scripts } from "@remix-run/react";
 
 import "@radix-ui/themes/styles.css";
+
+import Profile from "./pages/profile";
 
 export default function App() {
     return (
@@ -12,11 +14,17 @@ export default function App() {
                 <Links />
             </head>
             <body>
-                <Theme>
-                    <h1>Hello world!</h1>
+                <Theme
+                    appearance="dark"
+                    accentColor="gray"
+                    grayColor="slate"
+                    radius="small"
+                >
                     <Outlet />
-
                     <Scripts />
+
+                    <h1>Hello world!</h1>
+                    <Profile />
                 </Theme>
             </body>
         </html>
