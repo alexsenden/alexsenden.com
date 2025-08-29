@@ -60,7 +60,7 @@ const ProjectsSection = () => {
                         title="Harmony: The Social Network for Music Enthusiasts"
                         subtitle="December 2023"
                         content={
-                            "JavaScript/TypeScript, Next.ks, React, Node.js, Express, PostgreSQL, Prisma ORM, GitHub Actions"
+                            "JavaScript/TypeScript, Next.js, React, Node.js, Express, PostgreSQL, Prisma ORM, GitHub Actions"
                         }
                         imageUrl="/harmony.png"
                         height="360px"

@@ -1,7 +1,0 @@
-name = "alexsenden-com"
-main = "worker.js"
-compatibility_date = "2025-08-28"
-route = { pattern = "alexsenden.com/*", zone_name = "alexsenden.com" }
-
-[build]
-command = "npm run build"
