@@ -1,11 +1,12 @@
-import { Flex, Heading } from "@radix-ui/themes";
+import { Flex } from "@radix-ui/themes";
 
 import ImageCard from "../components/ImageCard";
+import SectionTitle from "../components/SectionTitle";
 
 const EducationSection = () => {
     return (
         <div>
-            <Heading>Education</Heading>
+            <SectionTitle title="Education" />
             <Flex justify="center" align="center" direction="row" gap="4">
                 <ImageCard
                     title="Master of Science in Computer Science"

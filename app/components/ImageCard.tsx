@@ -7,7 +7,7 @@ const BORDER_WIDTH = 3;
 
 const StyledCard = styled(UnstyledCard)`
     width: 300px;
-    height: 520px;
+    height: ${(props) => props.height || "520px"};
     font-size: 1.5rem;
     overflow: hidden;
     border-color: ${theme.light};
@@ -23,7 +23,7 @@ const ContentBreak = styled("hr")`
     background-color: ${theme.light};
     margin-left: -12px;
     margin-right: -12px;
-    margin-top: -12px;
+    margin-top: -10px;
 `;
 
 interface CardProps {
@@ -31,6 +31,7 @@ interface CardProps {
     subtitle?: string;
     content: string;
     imageUrl: string;
+    height?: string;
 }
 
 const ImageCard = ({
@@ -38,9 +39,10 @@ const ImageCard = ({
     subtitle,
     content,
     imageUrl,
+    height
 }: CardProps): React.ReactElement => {
     return (
-        <StyledCard variant="ghost">
+        <StyledCard variant="ghost" height={height}>
             <Flex
                 justify="flex-start"
                 align="flex-start"
@@ -50,12 +52,19 @@ const ImageCard = ({
                 <img
                     width="300px"
                     src={imageUrl}
-                    style={{ marginLeft: -12, marginTop: -20 }}
+                    style={{ marginLeft: -14, marginTop: -12 }}
                 />
                 <ContentBreak />
                 <Heading size="4">{title}</Heading>
-                {subtitle && <Heading size="2" style={{ marginTop: "-4px" }}>{subtitle}</Heading>}
-                <Text size="1" style={{ paddingTop: "10px", whiteSpace: "pre-line" }}>
+                {subtitle && (
+                    <Heading size="2" style={{ marginTop: "-4px" }}>
+                        {subtitle}
+                    </Heading>
+                )}
+                <Text
+                    size="1"
+                    style={{ paddingTop: "10px", whiteSpace: "pre-line" }}
+                >
                     {content}
                 </Text>
             </Flex>

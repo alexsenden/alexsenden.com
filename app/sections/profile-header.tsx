@@ -15,8 +15,7 @@ const ProfileHeader = (): React.ReactElement => {
                 <Heading
                     style={{
                         fontSize: "64pt",
-                        paddingTop: "24px",
-                        paddingBottom: "24px",
+                        lineHeight: "64pt",
                     }}
                 >
                     Alex Senden
@@ -24,9 +23,18 @@ const ProfileHeader = (): React.ReactElement => {
                 <Text style={{ fontSize: "32pt" }}>
                     M.Sc. Student, ML/Software Developer
                 </Text>
-                <Flex direction="row" gap="20px" style={{ paddingTop: "12px" }}>
-                    <LinkButton imgSrc="/linkedin-logo.png" linkUrl="https://www.linkedin.com/in/alexsenden/" text="LinkedIn" />
-                    <LinkButton imgSrc="/github-logo.png" linkUrl="https://github.com/alexsenden" text="GitHub" />
+                <Flex direction="row" align='center' gap="20px" style={{ paddingTop: "12px" }}>
+                    <LinkButton
+                        imgSrc="/linkedin-logo.png"
+                        linkUrl="https://www.linkedin.com/in/alexsenden/"
+                        text="LinkedIn"
+                    />
+                    <LinkButton
+                        imgSrc="/github-logo.png"
+                        linkUrl="https://github.com/alexsenden"
+                        text="GitHub"
+                    />
+                    <Text size="5">📧 alexandersenden (at) gmail</Text>
                 </Flex>
             </Flex>
         </Flex>

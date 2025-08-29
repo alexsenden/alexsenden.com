@@ -16,7 +16,7 @@ const LinkButton = ({
         window.open(linkUrl, "_blank");
     };
 
-    return <Button onClick={onClick} variant="surface" color={theme.light}><img src={imgSrc} width='20px'/>{text}</Button>;
+    return <Button size="3" onClick={onClick} variant="surface" color={theme.light}><img src={imgSrc} width='20px'/>{text}</Button>;
 };
 
 export default LinkButton;

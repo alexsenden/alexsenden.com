@@ -1,0 +1,4 @@
+name = "my-remix-app"
+main = "./build/index.js"
+compatibility_date = "2025-08-28"
+route = { pattern = "alexsenden.com/*", zone_name = "alexsenden.com" }
