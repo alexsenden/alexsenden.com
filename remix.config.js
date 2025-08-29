@@ -1,5 +1,6 @@
 /** @type {import('@remix-run/dev').AppConfig} */
 export default {
+    appDirectory: "app",
     server: "./worker.js",
     serverBuildPath: "build/index.js",
     serverConditions: ["worker"],
