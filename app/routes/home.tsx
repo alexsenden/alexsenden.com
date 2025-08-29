@@ -15,7 +15,7 @@ export const meta = ({}: Route.MetaArgs) => {
 
 const Home = () => {
     return (
-        <Flex align="center" justify="center">
+        <Flex align="center" justify="center" >
             <Profile />
         </Flex>
     );
