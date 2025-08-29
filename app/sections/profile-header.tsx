@@ -56,7 +56,7 @@ const ProfileHeader = (): React.ReactElement => {
                     {isMobile && <Headshot />}
                     <TitleText>Alex Senden</TitleText>
                 </Flex>
-                <SubtitleText style={isMobile ? { margin: "12px", textAlign: "center" } : {}}>
+                <SubtitleText style={isMobile ? { margin: "12px", marginTop: '24px', textAlign: "center" } : {}}>
                     M.Sc. Student, ML/Software Developer
                 </SubtitleText>
                 <Flex

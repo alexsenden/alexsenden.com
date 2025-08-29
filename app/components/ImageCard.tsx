@@ -7,7 +7,8 @@ const BORDER_WIDTH = 3;
 
 const StyledCard = styled(UnstyledCard)`
     width: 300px;
-    height: ${(props) => props.height || "520px"};
+    height: fit-content;
+    min-height: ${(props) => props.height || "520px"};
     font-size: 1.5rem;
     overflow: hidden;
     border-color: ${theme.light};
@@ -39,7 +40,7 @@ const ImageCard = ({
     subtitle,
     content,
     imageUrl,
-    height
+    height,
 }: CardProps): React.ReactElement => {
     return (
         <StyledCard variant="ghost" height={height}>
