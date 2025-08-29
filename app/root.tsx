@@ -7,7 +7,7 @@ import Profile from "./pages/profile";
 
 export default function App() {
     return (
-        <html>
+        <html lang="en">
             <head>
                 <link rel="icon" href="data:image/x-icon;base64,AA" />
                 <Meta />
