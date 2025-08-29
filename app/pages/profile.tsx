@@ -1,16 +1,11 @@
-import ImageCard from "../components/ImageCard";
-import Headshot from "../components/Headshot";
+import EducationSection from "../sections/education";
+import ProfileHeader from "../sections/profile-header";
 
 const Profile = (): React.ReactElement => {
     return (
         <div>
-            <div>Profile Page</div>
-            <Headshot />
-            <ImageCard
-                title="University of Manitoba"
-                content="I attended the U of M for my B.C.Sc. and M.Sc."
-                imageUrl="/umanitoba.jpg"
-            />
+            <ProfileHeader />
+            <EducationSection />
         </div>
     );
 };

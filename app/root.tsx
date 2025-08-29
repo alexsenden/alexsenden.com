@@ -1,4 +1,4 @@
-import { Theme } from "@radix-ui/themes";
+import { Flex, Theme } from "@radix-ui/themes";
 import { Links, Meta, Outlet, Scripts } from "@remix-run/react";
 
 import "@radix-ui/themes/styles.css";
@@ -23,8 +23,9 @@ export default function App() {
                     <Outlet />
                     <Scripts />
 
-                    <h1>Hello world!</h1>
-                    <Profile />
+                    <Flex align="center" justify="center">
+                        <Profile />
+                    </Flex>
                 </Theme>
             </body>
         </html>

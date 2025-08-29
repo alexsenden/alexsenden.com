@@ -1,0 +1,22 @@
+import { Button } from "@radix-ui/themes";
+import theme from "../theme";
+
+interface LinkButtonProps {
+    imgSrc?: string;
+    linkUrl: string;
+    text: string;
+}
+
+const LinkButton = ({
+    imgSrc,
+    linkUrl,
+    text,
+}: LinkButtonProps): React.ReactElement => {
+    const onClick = () => {
+        window.open(linkUrl, "_blank");
+    };
+
+    return <Button onClick={onClick} variant="surface" color={theme.light}><img src={imgSrc} width='20px'/>{text}</Button>;
+};
+
+export default LinkButton;

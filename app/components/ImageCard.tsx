@@ -7,7 +7,7 @@ const BORDER_WIDTH = 3;
 
 const StyledCard = styled(UnstyledCard)`
     width: 300px;
-    height: 500px;
+    height: 520px;
     font-size: 1.5rem;
     overflow: hidden;
     border-color: ${theme.light};
@@ -28,12 +28,14 @@ const ContentBreak = styled("hr")`
 
 interface CardProps {
     title: string;
+    subtitle?: string;
     content: string;
     imageUrl: string;
 }
 
 const ImageCard = ({
     title,
+    subtitle,
     content,
     imageUrl,
 }: CardProps): React.ReactElement => {
@@ -52,7 +54,10 @@ const ImageCard = ({
                 />
                 <ContentBreak />
                 <Heading size="4">{title}</Heading>
-                <Text size="1">{content}</Text>
+                {subtitle && <Heading size="2" style={{ marginTop: "-4px" }}>{subtitle}</Heading>}
+                <Text size="1" style={{ paddingTop: "10px", whiteSpace: "pre-line" }}>
+                    {content}
+                </Text>
             </Flex>
         </StyledCard>
     );
