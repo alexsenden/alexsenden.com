@@ -58,7 +58,10 @@ const ImageCard = ({
                 <ContentBreak />
                 <Heading size="4">{title}</Heading>
                 {subtitle && (
-                    <Heading size="2" style={{ marginTop: "-4px" }}>
+                    <Heading
+                        size="2"
+                        style={{ marginTop: "-4px", whiteSpace: "pre-line" }}
+                    >
                         {subtitle}
                     </Heading>
                 )}
