@@ -45,8 +45,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <link
                     rel="icon"
                     type="image/png"
-                    sizes="196x196"
-                    href="/favicon-196x196.png"
+                    sizes="192x192"
+                    href="/favicon-192x192.png"
                 />
             </head>
             <body>
