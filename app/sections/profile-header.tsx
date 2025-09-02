@@ -32,8 +32,10 @@ const ProfileHeader = (): React.ReactElement => {
         <Flex
             direction="row"
             align="center"
-            gap="20px"
-            style={{ paddingTop: "12px" }}
+            justify={isMobile ? "center" : "start"}
+            gapX="20px"
+            gapY="10px"
+            style={{ flexWrap: "wrap" }}
         >
             <LinkButton
                 imgSrc="/linkedin-logo.png"
@@ -45,25 +47,49 @@ const ProfileHeader = (): React.ReactElement => {
                 linkUrl="https://github.com/alexsenden"
                 text="GitHub"
             />
+            <LinkButton linkUrl="/Resume - Alex Senden.pdf" text="📋 Resume" />
         </Flex>
     );
 
     return (
-        <Flex direction="row" gap="8" style={{ padding: "20px" }}>
+        <Flex
+            direction="row"
+            gap="8"
+            style={{
+                padding: "20px",
+                paddingBottom: isMobile ? "0px" : "20px",
+            }}
+        >
             {!isMobile && <Headshot />}
             <Flex direction="column" justify="center">
-                <Flex direction="row" align="center" justify={isMobile ? "center" : "start"} gap="4" >
+                <Flex
+                    direction="row"
+                    align="center"
+                    justify={isMobile ? "center" : "start"}
+                    gap="4"
+                >
                     {isMobile && <Headshot />}
                     <TitleText>Alex Senden</TitleText>
                 </Flex>
-                <SubtitleText style={isMobile ? { margin: "12px", marginTop: '24px', textAlign: "center" } : {}}>
+                <SubtitleText
+                    style={
+                        isMobile
+                            ? {
+                                  margin: "12px",
+                                  marginTop: "16px",
+                                  textAlign: "center",
+                              }
+                            : {}
+                    }
+                >
                     M.Sc. Student, ML/Software Developer
                 </SubtitleText>
                 <Flex
                     direction={isMobile ? "column" : "row"}
                     align="center"
-                    gap="20px"
-                    style={isMobile ? {} : { paddingTop: "12px" }}
+                    gapX="20px"
+                    gapY="16px"
+                    style={{ paddingTop: isMobile ? "8px" : "24px" }}
                 >
                     {linkButtons}
                     <Text size="5">📧 alexandersenden (at) gmail</Text>
