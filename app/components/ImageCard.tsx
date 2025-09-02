@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { Card as UnstyledCard, Flex, Heading, Text } from "@radix-ui/themes";
 
 import theme from "../theme";
+import breakpoints from "~/breakpoints";
 
 const BORDER_WIDTH = 3;
 
@@ -16,6 +17,9 @@ const StyledCard = styled(UnstyledCard)`
     border-style: solid;
     border-radius: 2px;
     margin: 12px;
+    ${breakpoints.mobile} {
+        min-height: 0
+    }
 `;
 
 const ContentBreak = styled("hr")`

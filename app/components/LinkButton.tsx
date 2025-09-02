@@ -16,7 +16,18 @@ const LinkButton = ({
         window.open(linkUrl, "_blank");
     };
 
-    return <Button size="3" onClick={onClick} variant="surface" color={theme.light}>{imgSrc && <img src={imgSrc} width='20px'/>}{text}</Button>;
+    return (
+        <Button
+            size="3"
+            onClick={onClick}
+            variant="surface"
+            color={theme.light}
+            style={{ cursor: "pointer" }}
+        >
+            {imgSrc && <img src={imgSrc} width="20px" />}
+            {text}
+        </Button>
+    );
 };
 
 export default LinkButton;
