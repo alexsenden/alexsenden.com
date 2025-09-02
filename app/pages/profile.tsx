@@ -1,3 +1,4 @@
+import NonNerdySection from "~/sections/non-nerdy";
 import EducationSection from "../sections/education";
 import ExperienceSection from "../sections/experience";
 import ProfileHeader from "../sections/profile-header";
@@ -10,6 +11,7 @@ const Profile = (): React.ReactElement => {
             <EducationSection />
             <ProjectsSection />
             <ExperienceSection />
+            <NonNerdySection />
         </div>
     );
 };

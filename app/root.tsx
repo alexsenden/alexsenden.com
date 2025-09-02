@@ -36,6 +36,18 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 />
                 <Meta />
                 <Links />
+                <link
+                    rel="apple-touch-icon"
+                    type="image/png"
+                    sizes="180x180"
+                    href="/favicon-180x180.png"
+                />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    sizes="196x196"
+                    href="/favicon-196x196.png"
+                />
             </head>
             <body>
                 <Theme

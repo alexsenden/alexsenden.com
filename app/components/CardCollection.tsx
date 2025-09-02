@@ -22,7 +22,6 @@ interface CardCollectionProps {
 
 const CardCollection = ({ cards }: CardCollectionProps): React.ReactElement => {
     const twoColumn = useMediaQuery(rawBreakpoints.twoColumn) || cards.length % 3 == 1;
-    console.log(twoColumn);
 
     const rows: Array<Array<ComponentProps<typeof ImageCard>>> = [];
     for (const card of cards) {
