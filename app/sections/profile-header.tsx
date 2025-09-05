@@ -93,11 +93,11 @@ const ProfileHeader = (): React.ReactElement => {
                     key={isMobile ? "mobile" : "desktop"} // forces re-render when isMobile changes
                     sequence={[
                         1500,
-                        "Master's Student",
+                        "Software Developer",
                         1500,
                         "ML Developer",
                         1500,
-                        "Software Developer",
+                        "Master's Student",
                     ]}
                     speed={50}
                     repeat={Infinity}
