@@ -43,14 +43,14 @@ const FadeInFadeOut = ({
             controls.start({
                 opacity: 1,
                 y: 0,
-                transition: { delay: delay, duration: 0.5, ease: "easeOut" },
+                transition: { delay: delay, duration: 1, ease: "easeOut" },
             });
         } else {
             if (direction.current === "up") {
                 controls.start({
                     opacity: 0,
                     y: 150,
-                    transition: { duration: 0.5, ease: "easeOut" },
+                    transition: { duration: 1, ease: "easeOut" },
                 });
             }
         }
