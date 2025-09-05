@@ -7,7 +7,7 @@ const nonNerdyCards = [
         subtitle: "4 Teams Annually",
         content:
             "Outside of the tech world, I have always been an avid hockey player. I learned to skate when I was 3, and have been playing hockey since I was 5. " +
-            "I currently play on 4 different teams in recreational mens leagues around Winnipeg ranging in skill levels, including one team with my Dad, " +
+            "I currently play on 4 different teams in recreational men's leagues around Winnipeg ranging in skill levels, including one team with my Dad, " +
             "and another team with Junior players, College players, and an NHL draft pick.",
         imageUrl: "/hockey.jpg",
     },
@@ -24,7 +24,7 @@ const nonNerdyCards = [
         subtitle: "Wakeboarding, Water Skiing, etc.",
         content:
             "As a kid growing up in Winnipeg, you spend a lot of time around the water in the summer. " +
-            "I have been wakeboarding and water skiing since I was young, and have recently learned to Slalom water ski (one ski).",
+            "I have been wakeboarding and water skiing since I was young, and I am currently learning to slalom water ski (waterskiing on one ski).",
         imageUrl: "/watersports.jpg",
     },
     {
@@ -32,7 +32,7 @@ const nonNerdyCards = [
         subtitle: "📍 Everywhere",
         content:
             "A newer hobby of mine is hiking. Recently, I have been hiking in Vancouver, BC, Banff, AB, and just outside of Kenora, ON. " + 
-            "Some of my favourites are the summit hike in the Murrin Provincial Park near Squamish, BC, and Devils Bridge in Sedona, AZ.",
+            "Some of my favourites are the summit hike in the Murrin Provincial Park near Squamish, BC, and Devil's Bridge in Sedona, AZ.",
         imageUrl: "/hiking.jpg",
     },
     {
@@ -40,8 +40,8 @@ const nonNerdyCards = [
         subtitle: "📍 Wherever I Can",
         content:
             "I have been fortunate enough to travel to many places around the world, primarily across North America." +
-            " Some of my favourite places I have visited include Banff, AB, Lucerne, SUI, Sedona, AZ, and New York City, NY." +
-            " Right now, my goal is to explore more of Canada!",
+            " Some of my favourite places I have visited include Banff, AB; Lucerne, SUI; Sedona, AZ; and New York City, NY." +
+            " Right now, my goal is to explore more places in Canada!",
         imageUrl: "/travelling.jpg",
     },
 ];
