@@ -1,6 +1,7 @@
-import { Flex, Heading, Text } from "@radix-ui/themes";
+import { Flex, Text } from "@radix-ui/themes";
 import { TypeAnimation } from "react-type-animation";
 import { type CSSProperties } from "react";
+import { motion } from "motion/react";
 
 import Headshot from "../components/Headshot";
 import LinkButton from "../components/LinkButton";
@@ -106,16 +107,22 @@ const ProfileHeader = (): React.ReactElement => {
                             : subtitleTextBaseStyle
                     }
                 />
-                <Flex
-                    direction={isMobile ? "column" : "row"}
-                    align="center"
-                    gapX="20px"
-                    gapY="16px"
-                    style={{ paddingTop: isMobile ? "8px" : "24px" }}
+                <motion.div
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 3, duration: 0.5 }}
                 >
-                    {linkButtons}
-                    <Text size="5">📧 alexandersenden (at) gmail</Text>
-                </Flex>
+                    <Flex
+                        direction={isMobile ? "column" : "row"}
+                        align="center"
+                        gapX="20px"
+                        gapY="16px"
+                        style={{ paddingTop: isMobile ? "8px" : "24px" }}
+                    >
+                        {linkButtons}
+                        <Text size="5">📧 alexandersenden (at) gmail</Text>
+                    </Flex>
+                </motion.div>
             </Flex>
         </Flex>
     );

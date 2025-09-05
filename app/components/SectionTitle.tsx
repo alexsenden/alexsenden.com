@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { Flex, Heading } from "@radix-ui/themes";
 
-import theme from "../theme";
+import theme from "../utils/theme";
 
 const SectionSeparator = styled("hr")`
     border: none;

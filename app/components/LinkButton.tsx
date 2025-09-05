@@ -1,5 +1,5 @@
 import { Button } from "@radix-ui/themes";
-import theme from "../theme";
+import theme from "../utils/theme";
 
 interface LinkButtonProps {
     imgSrc?: string;

@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 import { Card as UnstyledCard, Flex, Heading, Text } from "@radix-ui/themes";
 
-import theme from "../theme";
-import breakpoints from "~/breakpoints";
+import theme from "../utils/theme";
+import breakpoints from "~/utils/breakpoints";
 
 const BORDER_WIDTH = 3;
 

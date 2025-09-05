@@ -1,5 +1,8 @@
+import { motion } from "motion/react";
+
 import SectionTitle from "../components/SectionTitle";
 import CardCollection from "~/components/CardCollection";
+import { fadeInFadeOut } from "~/utils/animations";
 
 const nonNerdyCards = [
     {
@@ -48,10 +51,10 @@ const nonNerdyCards = [
 
 const NonNerdySection = () => {
     return (
-        <div>
+        <motion.div {...fadeInFadeOut}>
             <SectionTitle title="Non-Nerdy Things" />
             <CardCollection cards={nonNerdyCards} />
-        </div>
+        </motion.div>
     );
 };
 

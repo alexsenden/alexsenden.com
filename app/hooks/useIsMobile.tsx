@@ -1,5 +1,5 @@
 import useMediaQuery from "./useMediaQuery";
-import { rawBreakpoints } from "~/breakpoints";
+import { rawBreakpoints } from "~/utils/breakpoints";
 
 const useIsMobile = (): boolean => {
     return useMediaQuery(rawBreakpoints.mobile);

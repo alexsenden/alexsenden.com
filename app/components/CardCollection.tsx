@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { Flex } from "@radix-ui/themes";
 import type { ComponentProps } from "react";
 
-import breakpoints, { rawBreakpoints } from "../breakpoints";
+import breakpoints, { rawBreakpoints } from "../utils/breakpoints";
 import ImageCard from "./ImageCard";
 import useMediaQuery from "~/hooks/useMediaQuery";
 

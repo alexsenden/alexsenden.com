@@ -1,5 +1,8 @@
+import { motion } from "motion/react";
+
 import SectionTitle from "../components/SectionTitle";
 import CardCollection from "~/components/CardCollection";
+import { fadeInFadeOut } from "~/utils/animations";
 
 const educationCards = [
     {
@@ -25,10 +28,10 @@ const educationCards = [
 
 const EducationSection = () => {
     return (
-        <div>
+        <motion.div {...fadeInFadeOut}>
             <SectionTitle title="Education" />
             <CardCollection cards={educationCards} />
-        </div>
+        </motion.div>
     );
 };
 

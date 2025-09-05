@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
-import theme from "~/theme";
-import breakpoints from "~/breakpoints";
+import theme from "~/utils/theme";
+import breakpoints from "~/utils/breakpoints";
 
 const CircularImage = styled("img")`
     border-radius: 50%;
