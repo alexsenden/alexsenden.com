@@ -5,7 +5,7 @@ import Profile from "../pages/profile";
 
 export const meta = ({}: Route.MetaArgs) => {
     return [
-        { title: "Alex Senden's Profile" },
+        { title: "Alex Senden - Machine Learning Developer" },
         {
             name: "description",
             content: "Personal Profile for Alex Senden, Software/ML Developer",
