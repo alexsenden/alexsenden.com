@@ -1,29 +1,38 @@
 import { Flex, Heading, Text } from "@radix-ui/themes";
+import { TypeAnimation } from "react-type-animation";
+import { type CSSProperties } from "react";
 
 import Headshot from "../components/Headshot";
 import LinkButton from "../components/LinkButton";
-import styled from "@emotion/styled";
-import breakpoints from "~/breakpoints";
 import useIsMobile from "~/hooks/useIsMobile";
 
-const TitleText = styled(Heading)`
-    font-size: 64pt;
-    line-height: 64pt;
-    ${breakpoints.mobile} {
-        font-size: 42pt;
-        line-height: 42pt;
-        inline-size: min-content;
-    }
-`;
+const titleTextBaseProps: CSSProperties = {
+    fontSize: "64pt",
+    lineHeight: "64pt",
+    display: "block",
+};
 
-const SubtitleText = styled(Text)`
-    font-size: 32pt;
-    line-height: 32pt;
-    ${breakpoints.mobile} {
-        font-size: 16pt;
-        line-height: 16pt;
-    }
-`;
+const titleTextMobileProps: CSSProperties = {
+    ...titleTextBaseProps,
+    fontSize: "42pt",
+    lineHeight: "42pt",
+    inlineSize: "min-content",
+    width: "191px",
+};
+
+const subtitleTextBaseStyle: CSSProperties = {
+    fontSize: "32pt",
+    lineHeight: "32pt",
+};
+
+const subtitleTextMobileStyle: CSSProperties = {
+    ...subtitleTextBaseStyle,
+    fontSize: "24pt",
+    lineHeight: "24pt",
+    margin: "12px",
+    marginTop: "16px",
+    textAlign: "center",
+};
 
 const ProfileHeader = (): React.ReactElement => {
     const isMobile = useIsMobile();
@@ -69,21 +78,34 @@ const ProfileHeader = (): React.ReactElement => {
                     gap="4"
                 >
                     {isMobile && <Headshot />}
-                    <TitleText>Alex Senden</TitleText>
+                    <TypeAnimation
+                        key={isMobile ? "mobile" : "desktop"}
+                        sequence={["Alex Senden"]}
+                        speed={20}
+                        cursor={false}
+                        style={
+                            isMobile ? titleTextMobileProps : titleTextBaseProps
+                        }
+                    />
                 </Flex>
-                <SubtitleText
+                <TypeAnimation
+                    key={isMobile ? "mobile" : "desktop"} // forces re-render when isMobile changes
+                    sequence={[
+                        1500,
+                        "Master's Student",
+                        1500,
+                        "ML Developer",
+                        1500,
+                        "Software Developer",
+                    ]}
+                    speed={50}
+                    repeat={Infinity}
                     style={
                         isMobile
-                            ? {
-                                  margin: "12px",
-                                  marginTop: "16px",
-                                  textAlign: "center",
-                              }
-                            : {}
+                            ? subtitleTextMobileStyle
+                            : subtitleTextBaseStyle
                     }
-                >
-                    M.Sc. Student, ML/Software Developer
-                </SubtitleText>
+                />
                 <Flex
                     direction={isMobile ? "column" : "row"}
                     align="center"

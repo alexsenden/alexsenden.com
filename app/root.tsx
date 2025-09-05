@@ -49,7 +49,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     href="/favicon-192x192.png"
                 />
             </head>
-            <body>
+            <body style={{overflowX: "hidden"}}>
                 <Theme
                     appearance="dark"
                     accentColor="gray"
