@@ -33,7 +33,8 @@ const nonNerdyCards = [
         subtitle: "📍 Everywhere",
         content:
             "A newer hobby of mine is hiking. Recently, I have been hiking in Vancouver, BC, Banff, AB, and just outside of Kenora, ON. " + 
-            "Some of my favourites are the summit hike in the Murrin Provincial Park near Squamish, BC, and Devil's Bridge in Sedona, AZ.",
+            "Some of my favourites are the summit hike in the Murrin Provincial Park near Squamish, BC, and Devil's Bridge in Sedona, AZ." + 
+            "\n\nIf you're a hiker, send me an email telling me where I should hike next!",
         imageUrl: "/hiking.jpg",
     },
     {
@@ -41,7 +42,7 @@ const nonNerdyCards = [
         subtitle: "📍 Wherever I Can",
         content:
             "I have been fortunate enough to travel to many places around the world, primarily across North America." +
-            " Some of my favourite places I have visited include Banff, AB; Lucerne, SUI; Sedona, AZ; and New York City, NY." +
+            " Some of my favourite places I have visited include: Banff, AB; Lucerne, SUI; Sedona, AZ; and New York City, NY." +
             " Right now, my goal is to explore more places in Canada!",
         imageUrl: "/travelling.jpg",
     },

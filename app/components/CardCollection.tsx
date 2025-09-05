@@ -18,9 +18,10 @@ const CollectionRow = styled(Flex)`
 
 interface CardCollectionProps {
     cards: Array<ComponentProps<typeof ImageCard>>;
+    cardHeight?: string
 }
 
-const CardCollection = ({ cards }: CardCollectionProps): React.ReactElement => {
+const CardCollection = ({ cards, cardHeight }: CardCollectionProps): React.ReactElement => {
     const twoColumn = useMediaQuery(rawBreakpoints.twoColumn) || cards.length % 3 == 1;
 
     const rows: Array<Array<ComponentProps<typeof ImageCard>>> = [];
@@ -38,7 +39,7 @@ const CardCollection = ({ cards }: CardCollectionProps): React.ReactElement => {
             {rows.map((row, index) => (
                 <CollectionRow key={index} gap="4">
                     {row.map((cardProps, cardIndex) => (
-                        <ImageCard key={cardIndex} {...cardProps} />
+                        <ImageCard key={cardIndex} height={cardHeight} {...cardProps} />
                     ))}
                 </CollectionRow>
             ))}

@@ -20,7 +20,7 @@ const educationCards = [
             " During my undergraduate studies, I specialized in artificial intelligence and software engineering." +
             " My academic excellence was recognized through multiple scholarships and awards, including the Governer General's Silver Medal for being the undergraduate in the best academic standing," +
             " as well as the Faculty of Science Medal for being the top graduate in the Faculty of Science.",
-        imageUrl: "/umanitoba.jpg",
+        imageUrl: "/UM-Icon-2.jpg",
     },
 ];
 
